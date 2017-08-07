@@ -1107,7 +1107,7 @@ disable_overscan=0
 ##
 ##     Default off.
 ##
-#dtparam=spi=off
+dtparam=spi=on
 
 ## random
 ##     Set to "on" to enable the hardware random

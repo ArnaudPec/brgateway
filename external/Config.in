@@ -1,1 +1,2 @@
-#source "$BR2_EXTERNAL/package/Config.in"
+#source "$BR2_EXTERNAL/package/sgw/Config.in"
+source "../external/package/sgw/Config.in"

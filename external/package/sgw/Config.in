@@ -1,0 +1,13 @@
+config BR2_PACKAGE_SGW
+	bool "sgw"
+	depends on BR2_TOOLCHAIN_HAS_THREADS
+        select BR2_PACKAGE_WIRINGPI
+	help
+          Simple LoRaWAN packet forwarder. This tool forwards acts as 
+          a gateway between the LoRaWAN sensors network and The Things
+	  Network backend.
+
+          https://github.com/ArnaudPec/single_chan_pkt_fwd
+
+comment "sgw needs pthreads and wiringpi"
+	depends on !BR2_TOOLCHAIN_HAS_THREADS
